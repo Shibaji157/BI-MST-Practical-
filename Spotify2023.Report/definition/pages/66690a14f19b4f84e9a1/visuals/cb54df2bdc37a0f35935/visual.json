@@ -1,0 +1,139 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "cb54df2bdc37a0f35935",
+  "position": {
+    "x": 20,
+    "y": 10,
+    "z": 1000,
+    "height": 700,
+    "width": 1240,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Key insights, assumptions and limitations",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "14pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "1 MUSIC: Popular songs are mid-tempo (median ~121 BPM), danceable (~69%) and energetic (~66%). Danceability and valence correlate (+0.40 Spearman). Audio features barely differ between bigger and smaller hits (|rho| <= 0.11 with streams).",
+                    "textStyle": {
+                      "fontSize": "11pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "2 CROSS-PLATFORM: Apple Music has the widest chart reach (90% of songs), then Shazam (59%), Spotify (58%), Deezer (42%). 271 songs (29%) chart on all four platforms; median streams stop rising after ~3 platforms.",
+                    "textStyle": {
+                      "fontSize": "11pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "3 PLAYLISTS: Playlist exposure is the strongest correlate of streams (Spearman 0.83; log-log R2 0.62). Top-quartile songs have ~9x the median streams of the bottom quartile. Association, not proof of causation - popular songs also attract playlists.",
+                    "textStyle": {
+                      "fontSize": "11pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "4 CHARTS: Chart presence is moderately related to streams (rho 0.12-0.34). Apple Music is most informative; Shazam behaves like a discovery signal (High tier median below Mid tier).",
+                    "textStyle": {
+                      "fontSize": "11pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "5 OUTLIERS: 26 over-performers (older, more acoustic, low playlists) and 40 under-performers (mostly 2022-23 releases with many playlists but low streams). Explanations such as catalogue/sync effects and new-release lag are interpretations, not proven by the data.",
+                    "textStyle": {
+                      "fontSize": "11pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "6 ARTISTS: 213 of 698 artists (30.5%) generate 80% of streams; top 10% of artists hold 52%, top 20% hold 69%. Concentrated but not a strict 80/20 because the data contains only hit songs.",
+                    "textStyle": {
+                      "fontSize": "11pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Assumptions",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "14pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Chart columns are treated as a presence score (0 = not charted; higher = stronger). Collaborations are credited in full to each artist, so artist totals overlap. Missing Shazam values set to 0. One corrupted streams row removed; 4 duplicate songs de-duplicated (kept higher streams). Correlations here use Pearson on log scale; the report quotes Spearman.",
+                    "textStyle": {
+                      "fontSize": "11pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Limitations",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "14pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Single snapshot (no time series), only successful songs, Spotify streams only, no forecasting. Measure/column definitions are in the semantic model (Songs and ArtistSongs tables).",
+                    "textStyle": {
+                      "fontSize": "11pt"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,17 @@
+table 'Top N'
+
+	column 'Top N'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: Top N
+
+	partition 'Top N' = m
+		mode: import
+		source =
+			let
+				Source = List.Numbers(5, 20, 5),
+				Tbl = Table.FromList(Source, Splitter.SplitByNothing(), {"Top N"}),
+				Typed = Table.TransformColumnTypes(Tbl, {{"Top N", Int64.Type}})
+			in
+				Typed
+

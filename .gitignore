@@ -1,0 +1,19 @@
+# Power BI local/user-specific files
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+**/.pbi/*.abf
+**/.pbi/*.log
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+.DS_Store
+Thumbs.db
+
+# VS Code local settings
+.vscode/
+
+# Python cache if any
+__pycache__/
+*.pyc

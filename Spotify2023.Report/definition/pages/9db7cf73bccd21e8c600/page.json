@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "9db7cf73bccd21e8c600",
+  "displayName": "Artist 80-20",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280
+}

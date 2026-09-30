@@ -1,0 +1,150 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "05cb1c16c22ee88b2b00",
+  "position": {
+    "x": 20,
+    "y": 430,
+    "z": 12000,
+    "height": 280,
+    "width": 1240,
+    "tabOrder": 12000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Songs"
+                    }
+                  },
+                  "Property": "track_name"
+                }
+              },
+              "queryRef": "Songs.track_name",
+              "nativeQueryRef": "track_name",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Songs"
+                    }
+                  },
+                  "Property": "artist_name"
+                }
+              },
+              "queryRef": "Songs.artist_name",
+              "nativeQueryRef": "artist_name",
+              "active": true
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Songs"
+                    }
+                  },
+                  "Property": "Avg Cross-Platform Score"
+                }
+              },
+              "queryRef": "Songs.Avg Cross-Platform Score",
+              "nativeQueryRef": "Avg Cross-Platform Score"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Songs"
+                    }
+                  },
+                  "Property": "Platforms Charted"
+                }
+              },
+              "queryRef": "Songs.Platforms Charted",
+              "nativeQueryRef": "Platforms Charted",
+              "active": true
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Songs"
+                    }
+                  },
+                  "Property": "Total Streams"
+                }
+              },
+              "queryRef": "Songs.Total Streams",
+              "nativeQueryRef": "Total Streams"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Songs"
+                    }
+                  },
+                  "Property": "Sum Total Playlists"
+                }
+              },
+              "queryRef": "Songs.Sum Total Playlists",
+              "nativeQueryRef": "Sum Total Playlists"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Songs"
+                  }
+                },
+                "Property": "Avg Cross-Platform Score"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top songs by cross-platform score'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

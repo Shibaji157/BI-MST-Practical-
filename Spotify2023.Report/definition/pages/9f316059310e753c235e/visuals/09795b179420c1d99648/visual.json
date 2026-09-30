@@ -1,0 +1,148 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "09795b179420c1d99648",
+  "position": {
+    "x": 555,
+    "y": 420,
+    "z": 9000,
+    "height": 290,
+    "width": 705,
+    "tabOrder": 9000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Songs"
+                    }
+                  },
+                  "Property": "track_name"
+                }
+              },
+              "queryRef": "Songs.track_name",
+              "nativeQueryRef": "track_name",
+              "active": true
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Songs"
+                    }
+                  },
+                  "Property": "Total Streams"
+                }
+              },
+              "queryRef": "Songs.Total Streams",
+              "nativeQueryRef": "Total Streams"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Songs"
+                    }
+                  },
+                  "Property": "Sum Spotify Charts"
+                }
+              },
+              "queryRef": "Songs.Sum Spotify Charts",
+              "nativeQueryRef": "Sum Spotify Charts"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Songs"
+                    }
+                  },
+                  "Property": "Sum Apple Charts"
+                }
+              },
+              "queryRef": "Songs.Sum Apple Charts",
+              "nativeQueryRef": "Sum Apple Charts"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Songs"
+                    }
+                  },
+                  "Property": "Sum Deezer Charts"
+                }
+              },
+              "queryRef": "Songs.Sum Deezer Charts",
+              "nativeQueryRef": "Sum Deezer Charts"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Songs"
+                    }
+                  },
+                  "Property": "Sum Shazam Charts"
+                }
+              },
+              "queryRef": "Songs.Sum Shazam Charts",
+              "nativeQueryRef": "Sum Shazam Charts"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Songs"
+                  }
+                },
+                "Property": "Total Streams"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top 20 style ranking: streams and chart scores'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

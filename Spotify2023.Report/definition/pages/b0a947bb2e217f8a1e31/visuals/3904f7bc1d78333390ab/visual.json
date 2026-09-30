@@ -1,0 +1,121 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "3904f7bc1d78333390ab",
+  "position": {
+    "x": 20,
+    "y": 420,
+    "z": 12000,
+    "height": 290,
+    "width": 420,
+    "tabOrder": 12000
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Songs"
+                    }
+                  },
+                  "Property": "Stream Quartile"
+                }
+              },
+              "queryRef": "Songs.Stream Quartile",
+              "nativeQueryRef": "Stream Quartile",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Songs"
+                    }
+                  },
+                  "Property": "Avg Danceability"
+                }
+              },
+              "queryRef": "Songs.Avg Danceability",
+              "nativeQueryRef": "Avg Danceability"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Songs"
+                    }
+                  },
+                  "Property": "Avg Energy"
+                }
+              },
+              "queryRef": "Songs.Avg Energy",
+              "nativeQueryRef": "Avg Energy"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Songs"
+                    }
+                  },
+                  "Property": "Avg Valence"
+                }
+              },
+              "queryRef": "Songs.Avg Valence",
+              "nativeQueryRef": "Avg Valence"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Songs"
+                    }
+                  },
+                  "Property": "Avg Acousticness"
+                }
+              },
+              "queryRef": "Songs.Avg Acousticness",
+              "nativeQueryRef": "Avg Acousticness"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Average features by stream quartile'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

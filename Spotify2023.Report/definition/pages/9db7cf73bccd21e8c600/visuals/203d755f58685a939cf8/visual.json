@@ -1,0 +1,134 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "203d755f58685a939cf8",
+  "position": {
+    "x": 855,
+    "y": 150,
+    "z": 9000,
+    "height": 560,
+    "width": 405,
+    "tabOrder": 9000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ArtistSongs"
+                    }
+                  },
+                  "Property": "artist_name"
+                }
+              },
+              "queryRef": "ArtistSongs.artist_name",
+              "nativeQueryRef": "artist_name",
+              "active": true
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ArtistSongs"
+                    }
+                  },
+                  "Property": "Artist Rank"
+                }
+              },
+              "queryRef": "ArtistSongs.Artist Rank",
+              "nativeQueryRef": "Artist Rank"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ArtistSongs"
+                    }
+                  },
+                  "Property": "Artist Streams (Top N)"
+                }
+              },
+              "queryRef": "ArtistSongs.Artist Streams (Top N)",
+              "nativeQueryRef": "Artist Streams (Top N)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ArtistSongs"
+                    }
+                  },
+                  "Property": "% Contribution (Top N)"
+                }
+              },
+              "queryRef": "ArtistSongs.% Contribution (Top N)",
+              "nativeQueryRef": "% Contribution (Top N)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ArtistSongs"
+                    }
+                  },
+                  "Property": "Cumulative % (Top N)"
+                }
+              },
+              "queryRef": "ArtistSongs.Cumulative % (Top N)",
+              "nativeQueryRef": "Cumulative % (Top N)"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "ArtistSongs"
+                  }
+                },
+                "Property": "Artist Streams (Top N)"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Artist ranking'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

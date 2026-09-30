@@ -1,0 +1,60 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "8bc6fb734a686171dd64",
+  "position": {
+    "x": 630,
+    "y": 55,
+    "z": 5000,
+    "height": 80,
+    "width": 190,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ArtistSongs"
+                    }
+                  },
+                  "Property": "Artists to Reach 80%"
+                }
+              },
+              "queryRef": "ArtistSongs.Artists to Reach 80%",
+              "nativeQueryRef": "Artists to Reach 80%"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Artists to reach 80% of streams'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

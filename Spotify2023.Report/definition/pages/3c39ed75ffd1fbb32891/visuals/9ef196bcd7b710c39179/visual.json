@@ -1,0 +1,131 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "9ef196bcd7b710c39179",
+  "position": {
+    "x": 735,
+    "y": 150,
+    "z": 7000,
+    "height": 200,
+    "width": 525,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Songs"
+                    }
+                  },
+                  "Property": "Outlier Group"
+                }
+              },
+              "queryRef": "Songs.Outlier Group",
+              "nativeQueryRef": "Outlier Group",
+              "active": true
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Songs"
+                    }
+                  },
+                  "Property": "Songs Count"
+                }
+              },
+              "queryRef": "Songs.Songs Count",
+              "nativeQueryRef": "Songs Count"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Songs"
+                    }
+                  },
+                  "Property": "Median Streams (M)"
+                }
+              },
+              "queryRef": "Songs.Median Streams (M)",
+              "nativeQueryRef": "Median Streams (M)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Songs"
+                    }
+                  },
+                  "Property": "Avg Danceability"
+                }
+              },
+              "queryRef": "Songs.Avg Danceability",
+              "nativeQueryRef": "Avg Danceability"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Songs"
+                    }
+                  },
+                  "Property": "Avg Energy"
+                }
+              },
+              "queryRef": "Songs.Avg Energy",
+              "nativeQueryRef": "Avg Energy"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Songs"
+                    }
+                  },
+                  "Property": "Avg Acousticness"
+                }
+              },
+              "queryRef": "Songs.Avg Acousticness",
+              "nativeQueryRef": "Avg Acousticness"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Profile of each group'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

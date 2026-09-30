@@ -1,0 +1,3 @@
+relationship ArtistSongs_to_Songs
+	fromColumn: ArtistSongs.track_id
+	toColumn: Songs.track_id
